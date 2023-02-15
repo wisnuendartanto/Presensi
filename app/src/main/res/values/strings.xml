@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">Presensi</string>
+    <string name="setting">Pengaturan</string>
+    <string name="Logout">Keluar</string>
+</resources>
