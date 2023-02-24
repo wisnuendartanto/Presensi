@@ -1,19 +1,194 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout
+<RelativeLayout
     xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".Presensi">
+    tools:context=".Ijin">
 
     <TextView
+        android:id="@+id/txt_header"
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:textSize="20dp"
-        android:text="Ajukan Ijin"
+        android:layout_height="wrap_content"
+        android:paddingTop="30dp"
+        android:paddingStart="10dp"
         android:gravity="center"
-        android:textColor="#273746"
+        android:text="Pengajuan Ijin/Cuti"
+        android:textColor="@color/black"
+        android:textSize="20sp"
         android:textStyle="bold" />
 
-</androidx.constraintlayout.widget.ConstraintLayout>
+
+    <TextView
+        android:id="@+id/tgl1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/txt_header"
+        android:paddingTop="40dp"
+        android:layout_marginStart="20dp"
+        android:textSize="18sp"
+        android:textColor="@color/black"
+        android:text="Tanggal Mulai :"
+        />
+    <EditText
+        android:id="@+id/et_tgl1"
+        android:layout_width="200dp"
+        android:layout_height="40dp"
+        android:layout_below="@+id/tgl1"
+        android:background="#F8F9F9"
+        android:textSize="18sp"
+        android:paddingStart="10dp"
+        android:hint="DD/MM/YYY"
+        android:outlineSpotShadowColor="@color/black"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="10dp">
+    </EditText>
+
+    <TextView
+        android:id="@+id/tgl2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/et_tgl1"
+        android:layout_marginStart="20dp"
+        android:paddingTop="20dp"
+        android:textSize="18sp"
+        android:textColor="@color/black"
+        android:text="Tanggal Selesai :"
+        />
+    <EditText
+        android:id="@+id/et_tgl2"
+        android:layout_width="200dp"
+        android:layout_height="40dp"
+        android:layout_below="@+id/tgl2"
+        android:background="#F8F9F9"
+        android:textSize="18sp"
+        android:paddingStart="10dp"
+        android:hint="DD/MM/YYY"
+        android:outlineSpotShadowColor="@color/black"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="10dp">
+    </EditText>
+
+    <TextView
+        android:id="@+id/keperluan"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/et_tgl2"
+        android:layout_marginStart="20dp"
+        android:paddingTop="20dp"
+        android:text="Keperluan :"
+        android:textColor="@color/black"
+        android:textSize="18sp"
+        />
+
+    <GridLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/grid_keperluan"
+        android:layout_below="@+id/keperluan"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="0dp"
+        android:layout_marginEnd="20dp"
+        android:layout_marginBottom="20dp"
+        android:columnCount="3"
+        android:rowCount="2">
+
+        <LinearLayout
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:layout_row="0"
+            android:layout_rowWeight="0"
+            android:layout_column="0"
+            android:layout_columnWeight="0"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <CheckBox
+                android:id="@+id/checkBox1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="18sp"
+                android:text="Ijin" />
+
+        </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:layout_row="0"
+        android:layout_rowWeight="0"
+        android:layout_column="1"
+        android:layout_columnWeight="0"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <CheckBox
+            android:id="@+id/checkBox2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            android:layout_marginEnd="10dp"
+            android:textSize="18sp"
+            android:text="Sakit" />
+
+    </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:layout_row="0"
+            android:layout_rowWeight="0"
+            android:layout_column="2"
+            android:layout_columnWeight="0"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <CheckBox
+                android:id="@+id/checkBox3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="10dp"
+                android:textSize="18sp"
+                android:text="Cuti" />
+        </LinearLayout>
+    </GridLayout>
+
+    <TextView
+        android:id="@+id/txt_catatan"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/grid_keperluan"
+        android:layout_marginStart="20dp"
+        android:textSize="18sp"
+        android:textColor="@color/black"
+        android:text="Catatan :"
+        />
+    <EditText
+        android:id="@+id/etCatatan"
+        android:layout_below="@+id/txt_catatan"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:background="#F8F9F9"
+        android:paddingStart="10dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="20dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginBottom="20dp"
+        android:textSize="18sp"
+        android:gravity="left"
+        android:hint="Tambahkan keterangan disini!" />
+
+
+    <Button
+        android:id="@+id/btnAjukan"
+        android:layout_width="150dp"
+        android:layout_height="60dp"
+        android:layout_below="@+id/etCatatan"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:backgroundTint="#2874A6"
+        android:textSize="20sp"
+        android:text="AJUKAN"
+        android:textColor="@color/white"/>
+</RelativeLayout>

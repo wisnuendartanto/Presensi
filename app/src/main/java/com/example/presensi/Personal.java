@@ -21,7 +21,7 @@ public class Personal extends AppCompatActivity {
         ActionBar actionBar = getSupportActionBar();
         if (actionBar!= null) {
             actionBar.setDefaultDisplayHomeAsUpEnabled(true);
-            actionBar.setTitle("menu saya");
+            actionBar.setTitle("Profil");
         }
 
     }

@@ -3,10 +3,9 @@
     xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
-    android:layout_width="match_parent"
+    android:layout_width="wrap_content"
     android:layout_height="match_parent"
-    tools:context=".Presensi">
-
+    tools:context=".Personal">
 
 
 
@@ -14,7 +13,7 @@
         android:id="@+id/profil"
         android:layout_width="match_parent"
         android:layout_height="120dp"
-        android:layout_marginTop="60dp"
+        android:layout_marginTop="30dp"
         android:padding="10dp"
         android:gravity="center"
         android:src="@drawable/profil">
@@ -22,203 +21,192 @@
 
 
     <androidx.cardview.widget.CardView
-        android:layout_below="@+id/profil"
         android:layout_width="match_parent"
-        android:layout_height="500dp"
-        android:layout_row="0"
-        android:layout_rowWeight="1"
-        android:layout_column="0"
-        android:layout_columnWeight="1"
-        android:layout_gravity="fill"
-        android:layout_marginStart="30dp"
-        android:layout_marginTop="20dp"
-        android:layout_marginEnd="30dp"
-        android:layout_marginBottom="30dp"
-        app:cardCornerRadius="10dp"
-        app:cardElevation="10dp"
-        android:onClick="presensi">
-
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:orientation="vertical">
+        android:layout_height="wrap_content">
 
 
-
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_below="@+id/profil"
-                android:textSize="16dp"
-                android:text="Data Pribadi"
-                android:layout_marginTop="20dp"
-                android:layout_marginStart="20dp"
-                android:textColor="#273746"
-                android:textStyle="bold" />
-
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_below="@+id/txt_datapribadi"
-                android:textSize="14dp"
-                android:text="Nama :"
-                android:layout_marginTop="10dp"
-                android:layout_marginStart="20dp"
-                android:textColor="#273746"
-                android:textStyle="bold" />
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_below="@+id/txt_nama"
-                android:textSize="14dp"
-                android:text="Namanya Siapa, S.Apa"
-                android:layout_marginTop="5dp"
-                android:layout_marginStart="20dp"
-                android:textColor="#273746" />
-
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_below="@+id/txt_datapribadi"
-                android:textSize="14dp"
-                android:text="NIK :"
-                android:layout_marginTop="10dp"
-                android:layout_marginStart="20dp"
-                android:textColor="#273746"
-                android:textStyle="bold" />
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_below="@+id/txt_nama"
-                android:textSize="14dp"
-                android:text="33200123456789"
-                android:layout_marginTop="5dp"
-                android:layout_marginStart="20dp"
-                android:textColor="#273746" />
-
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_below="@+id/txt_datapribadi"
-                android:textSize="14dp"
-                android:text="Tempat Lahir :"
-                android:layout_marginTop="10dp"
-                android:layout_marginStart="20dp"
-                android:textColor="#273746"
-                android:textStyle="bold" />
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_below="@+id/txt_nama"
-                android:textSize="14dp"
-                android:text="SEMARANG"
-                android:layout_marginTop="5dp"
-                android:layout_marginStart="20dp"
-                android:textColor="#273746" />
-
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_below="@+id/txt_datapribadi"
-                android:textSize="14dp"
-                android:text="Tanggal lahir :"
-                android:layout_marginTop="10dp"
-                android:layout_marginStart="20dp"
-                android:textColor="#273746"
-                android:textStyle="bold" />
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_below="@+id/txt_nama"
-                android:textSize="14dp"
-                android:text="15 Februari 2023"
-                android:layout_marginTop="5dp"
-                android:layout_marginStart="20dp"
-                android:textColor="#273746" />
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_below="@+id/txt_datapribadi"
-                android:textSize="14dp"
-                android:text="Alamat :"
-                android:layout_marginTop="10dp"
-                android:layout_marginStart="20dp"
-                android:textColor="#273746"
-                android:textStyle="bold" />
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_below="@+id/txt_nama"
-                android:textSize="14dp"
-                android:text="Jl. Pahlawan Nomor. 9 Semarang"
-                android:layout_marginTop="5dp"
-                android:layout_marginStart="20dp"
-                android:textColor="#273746" />
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_below="@+id/txt_datapribadi"
-                android:textSize="14dp"
-                android:text="Jenis Kelamin :"
-                android:layout_marginTop="10dp"
-                android:layout_marginStart="20dp"
-                android:textColor="#273746"
-                android:textStyle="bold" />
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_below="@+id/txt_nama"
-                android:textSize="14dp"
-                android:text="Laki-laki"
-                android:layout_marginTop="5dp"
-                android:layout_marginStart="20dp"
-                android:textColor="#273746" />
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_below="@+id/txt_datapribadi"
-                android:textSize="14dp"
-                android:text="Agama :"
-                android:layout_marginTop="10dp"
-                android:layout_marginStart="20dp"
-                android:textColor="#273746"
-                android:textStyle="bold" />
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_below="@+id/txt_nama"
-                android:textSize="14dp"
-                android:text="Islam"
-                android:layout_marginTop="5dp"
-                android:layout_marginStart="20dp"
-                android:textColor="#273746" />
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_below="@+id/txt_datapribadi"
-                android:textSize="14dp"
-                android:text="Unit Kerja :"
-                android:layout_marginTop="10dp"
-                android:layout_marginStart="20dp"
-                android:textColor="#273746"
-                android:textStyle="bold" />
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_below="@+id/txt_nama"
-                android:textSize="14dp"
-                android:text="Sub Koordinator Apa"
-                android:layout_marginTop="5dp"
-                android:layout_marginStart="20dp"
-                android:textColor="#273746" />
-
-        </LinearLayout>
     </androidx.cardview.widget.CardView>
-
-
-
-
-
+    <TextView
+        android:id="@+id/data_pribadi"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/profil"
+        android:gravity="center_horizontal"
+        android:textSize="20dp"
+        android:text="Data Pribadi"
+        android:layout_marginTop="30dp"
+        android:textColor="#273746"
+        android:textStyle="bold" />
+    <TextView
+        android:id="@+id/nama"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/data_pribadi"
+        android:layout_gravity="center_horizontal"
+        android:textSize="16dp"
+        android:text="Nama :"
+        android:layout_marginTop="30dp"
+        android:layout_marginStart="30dp"
+        android:textColor="#273746"
+        android:textStyle="bold" />
+    <TextView
+        android:id="@+id/nama_isi"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/nama"
+        android:layout_gravity="center_horizontal"
+        android:textSize="16dp"
+        android:text="Nama Lengkap, S.Apa"
+        android:layout_marginTop="5dp"
+        android:layout_marginStart="30dp"
+        android:textColor="#273746" />
+    <TextView
+        android:id="@+id/nik"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/nama_isi"
+        android:textSize="14dp"
+        android:text="NIK :"
+        android:layout_marginTop="10dp"
+        android:layout_marginStart="30dp"
+        android:textColor="#273746"
+        android:textStyle="bold" />
+    <TextView
+        android:id="@+id/nik_isi"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/nik"
+        android:textSize="14dp"
+        android:text="33200123456789"
+        android:layout_marginTop="5dp"
+        android:layout_marginStart="30dp"
+        android:textColor="#273746" />
+    <TextView
+        android:id="@+id/tempat"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/nik_isi"
+        android:textSize="14dp"
+        android:text="Tempat Lahir :"
+        android:layout_marginTop="10dp"
+        android:layout_marginStart="30dp"
+        android:textColor="#273746"
+        android:textStyle="bold" />
+    <TextView
+        android:id="@+id/tempat_isi"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tempat"
+        android:textSize="14dp"
+        android:text="Semarang"
+        android:layout_marginTop="5dp"
+        android:layout_marginStart="30dp"
+        android:textColor="#273746" />
+    <TextView
+        android:id="@+id/tanggal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tempat_isi"
+        android:textSize="14dp"
+        android:text="Tanggal Lahir :"
+        android:layout_marginTop="10dp"
+        android:layout_marginStart="30dp"
+        android:textColor="#273746"
+        android:textStyle="bold" />
+    <TextView
+        android:id="@+id/tanggal_isi"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tanggal"
+        android:textSize="14dp"
+        android:text="20 Februari 2023"
+        android:layout_marginTop="5dp"
+        android:layout_marginStart="30dp"
+        android:textColor="#273746" />
+    <TextView
+        android:id="@+id/alamat"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tanggal_isi"
+        android:textSize="14dp"
+        android:text="Alamat :"
+        android:layout_marginTop="10dp"
+        android:layout_marginStart="30dp"
+        android:textColor="#273746"
+        android:textStyle="bold" />
+    <TextView
+        android:id="@+id/alamat_isi"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/alamat"
+        android:textSize="14dp"
+        android:text="Jl. Pahlawan Nomor. 9 Semarang"
+        android:layout_marginTop="5dp"
+        android:layout_marginStart="30dp"
+        android:textColor="#273746" />
+    <TextView
+        android:id="@+id/jenis"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/alamat_isi"
+        android:textSize="14dp"
+        android:text="Jenis Kelamin :"
+        android:layout_marginTop="10dp"
+        android:layout_marginStart="30dp"
+        android:textColor="#273746"
+        android:textStyle="bold" />
+    <TextView
+        android:id="@+id/jenis_isi"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/jenis"
+        android:textSize="14dp"
+        android:text="Laki-laki"
+        android:layout_marginTop="5dp"
+        android:layout_marginStart="30dp"
+        android:textColor="#273746" />
+    <TextView
+        android:id="@+id/agama"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/jenis_isi"
+        android:textSize="14dp"
+        android:text="Agama :"
+        android:layout_marginTop="10dp"
+        android:layout_marginStart="30dp"
+        android:textColor="#273746"
+        android:textStyle="bold" />
+    <TextView
+        android:id="@+id/agama_isi"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/agama"
+        android:textSize="14dp"
+        android:text="Islam"
+        android:layout_marginTop="5dp"
+        android:layout_marginStart="30dp"
+        android:textColor="#273746" />
+    <TextView
+        android:id="@+id/unit"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/agama_isi"
+        android:textSize="14dp"
+        android:text="Unit Kerja :"
+        android:layout_marginTop="10dp"
+        android:layout_marginStart="30dp"
+        android:textColor="#273746"
+        android:textStyle="bold" />
+    <TextView
+        android:id="@+id/unit_isi"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/unit"
+        android:textSize="14dp"
+        android:text="Sub Koordinator Apa"
+        android:layout_marginTop="5dp"
+        android:layout_marginStart="30dp"
+        android:textColor="#273746" />
 
 
 
